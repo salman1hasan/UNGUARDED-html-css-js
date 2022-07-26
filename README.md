@@ -1,4 +1,4 @@
-# UNGUARDED(html-css-js) Only viewable for interviews.
+# UNGUARDED(html-css-js) [Only available for interviews[Functioning files w/ images and content]
 https://vimeo.com/721953612 UNGUARDED website [Front end and back end development using html css and js], due to trademark and copyright logo's and videos will not be uploaded on github. 
 
 Front end development (*Logo's made using canva, Video's made using adobe premire)
