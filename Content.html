@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Content.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+<style type="text/css">
+div#video_controls_bar{ 
+    background: rgb(247, 136, 25); 
+    padding: 10px; 
+    color: #ccc;
+    width: 100%;
+}
+input#seekslider {  
+    width: 300px; 
+}
+input#volumeslider {  
+    width: 80px;
+}
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background:#ccc;
+    height: 4px;
+}
+input[type='range']::-webkit-slider-thumb{
+     -webkit-appearance: none !important;
+     background: black;
+     height: 15px;
+     width: 15px;
+     border-radius: 100%;
+     cursor: pointer;
+    }
+</style>
+</head>
+<body>
+  <section>
+    <header>
+    <div class="video-player">
+        <video width="100%" muted loop autoplay>
+          <source src="images/UG[H].mp4" type="video/mp4" alt="UNGUARDED's History">
+          </video> 
+        </div>
+      </header>
+</section>
+<section>
+<div class="container">
+    <div class="main-video">
+      <div class="video">
+      <video id="my_video">
+        <source src="Images/JK.mp4">
+      </video>
+      <div id="video_controls_bar">
+        <button id="playpausebtn">Play</button>
+        <input id="seekslider" type="range" min="0" max="100" value="0" step="0">
+        <span id="curtimetext"></span> <span id="durtimetext"></span>
+        <button id="mutebtn">Mute</button>
+        <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+        <button id="fullscreenbtn">[ &nbsp; ]</button>
+      </div>
+      <h3 class="title">UNGUARDED EPISODE | Ja'Kobe Walter "Wubb's World"</h3>
+      </div>
+    </div>
+  <div class="video-list">
+      <div class="vid active">
+        <video src="images/JK.mp4" poster="images/JK.jpeg"></video>
+        <h3 class="title">UNGUARDED EPISODE | Ja'Kobe Walter "Wubb's World"</h3>
+    </div>
+    <div class="vid">
+      <video src="images/IJ.mp4" poster="images/IJ.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Ian Jackson "Captain Jack"</h3>
+  </div>
+      <div class="vid">
+          <video src="images/OO.mp4" poster="images/OO.jpeg"></video>
+          <h3 class ="title"> UNGUARDED EPISODE | Otega Oweh "Tega-Tron"</h3>
+    </div>
+     <div class="vid">
+        <video src="images/cc1.mp4" poster="images/CC.jpeg"></video>
+       <h3 class ="title"> UNGUARDED EPISODE | Charli Collier "#1 Pick"</h3>
+    </div>
+    <div class="vid">
+      <video src="images/TA.mp4" poster="images/TA.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Terrion Arnold "For the Doubters" </h3>
+    </div>
+    <div class="vid">
+      <video src="images/KT.mp4" poster="images/KT.png"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Khoi Thurmon "Chicagoat"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/MP.mp4" poster="images/MP.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Myles Powell "Seton Hall University"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/SC.mp4" poster="images/SC.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Sharife Cooper "They're Woke"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/cl.mp4" poster="images/CL.jpeg"></video>
+      <h3 class ="title"> UNGUARDED EPISODE | Caleb Love "314 to UNC"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/AEGeorgia.mp4" poster="images/AE.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Anthony Edwards "University of Georgia" </h3>
+     </div>
+     <div class="vid">
+      <video src="images/juju.mp4" poster="images/JUJU.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Juju Murray "Highbridge Made" </h3>
+     </div>
+     <div class="vid">
+      <video src="images/Cooper.mp4" poster="images/SC1.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Sharife Cooper "AAU Season" </h3>
+     </div>
+     <div class="vid">
+      <video src="images/anted.mp4" poster="images/AE1.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Anthony Edwards "University of Georgia" </h3>
+     </div>
+     <div class="vid">
+      <video src="images/Lesterqpt2.mp4" poster="images/LQ1.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Lester Quinones "EFFORT-LES" PT. 2 </h3>
+     </div>
+     <div class="vid">
+      <video src="images/RJ Hampton.mp4" poster="images/RJDimg.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | RJ Hampton "The Real Deal" </h3>
+     </div>
+     <div class="vid">
+      <video src="images/Boogieellis.mp4" poster="images/BE.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Boogie Ellis "From the mud"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/Amirdawes.mp4" poster="images/AD.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Amir Dawes "Newark" </h3>
+     </div>
+     <div class="vid">
+      <video src="images/Tre Mann.mp4" poster="images/TM.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Tre Mann "Curry Range" </h3>
+     </div>
+     <div class="vid">
+      <video src="images/NatMarsh.mp4" poster="images/NM.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Natalija Marshall "Take a Stand"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/Lesterq.mp4" poster="images/LQ.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Lester Quinones "Effort-Less"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/Scottie Lewis.mp4" poster="images/SL.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Scottie Lewis "Change the World"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/jw.mp4" poster="images/JW.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Jordan Walker "You don't know my story"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/jl.mp4" poster="images/JL.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Jalen Lecque "Prove them Wrong"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/JQiversonclassic.mp4" poster="images/JQIV.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Jahvon Quinerly Just Different "Iverson Classic"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/itcheatcodept2.mp4" poster="images/IT.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Isaiah Todd "Cheat Code Pt. 2"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/JQmcdonalds.mp4" poster="images/JQMC.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Jahvon Quinerly Just Different "Mcdonald's"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/LKXbolbol.mp4" poster="images/LLXBOLBOL.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Lou King X Bol Bol "Jordan Brand"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/jqdyckman.mp4" poster="images/JQDYCK.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Jahvon Quinerly Just Different "Dyckman"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/jqcityofpalms.mp4" poster="images/JQCT.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Jahvon Quinerly Just Different "City of Palms"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/NicoXSpencer.mp4" poster="images/SRXNM.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Jahvon Quinerly Just Different "City of Palms"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/itcheatcode.mp4" poster="images/IT.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Isaiah Todd "Cheat Code"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/NazReid.mp4" poster="images/NZ.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Naz Reid "Beyond Basketball"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/MosesBrown.mp4" poster="images/MB.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Moses Brown "Queens Pt. 2 w/ Modells"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/JC.mp4" poster="images/JC.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Jalen Carey "Deeper Than Basketball"</h3>
+     </div>
+     <div class="vid">
+      <video src="images/JJ.mp4" poster="images/JJ.jpeg"></video>
+     <h3 class ="title"> UNGUARDED EPISODE | Ja'Quaye James "WTGBM"</h3>
+     </div>
+</section>
+<div class="video-player2">
+  <video width="100%" muted autoplay>
+      <source src="images/unguarded2.mp4" type="video/mp4" alt="UNGUARDED's History">
+      </video> 
+    </div>
+<section class="footer">
+  <ul class="list">
+    <li>
+      <a href="register.html">SIGN-UP</a> 
+  </li>
+  <li>
+     <a href="Home.html">HOME</a> 
+  </li>
+  <li>
+      <a href="About.html">ABOUT</a>
+  </li>
+  <li>
+      <a href="Content.html">CONTENT</a> 
+  </li>
+  </ul>
+  <br>
+      <div class="social">
+          <a href="https://www.youtube.com/c/UNGUARDED"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/theunguarded/"><i class="fab fa-instagram"></i></a>
+          <a href="><i class="fab fa-snapchat"></i></a>
+          <p class="copyright">
+              @2022 UNGUARDED
+          </p>
+      </div>
+  </section>
+  </body>
+  </html>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src = "Content.js"></script>
+</body>
+</html>

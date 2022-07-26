@@ -1,0 +1,215 @@
+*{
+    margin:0; padding:0;
+    box-sizing:border-box;
+    transition:.5s linear;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 10px 5%;
+}
+.container .main-video{
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container .main-video video{
+    width: 100%;
+    border-radius: 5px;
+}
+.container .main-video .title{
+    color: rgb(0, 0, 0);
+    font-size:18px;
+    padding-top:15px;
+    text-align: center;
+    font-family: monospace;
+}
+.container .video-list{
+    background: #fff;
+    border-radius: 5px;
+    height: 540px;
+    overflow-y: scroll;
+}
+.container .main-video video:hover{
+    background: rgb(238, 237, 236);
+    box-shadow: 0 0 0 1px rgb(255, 255, 255) inset;
+    transition: .5s;
+}
+.container .video-list{
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-color: black;
+    height: 540px;
+    overflow-y: scroll;
+}
+.container .video-list::-webkit-scrollbar{
+    width: 7px;
+}
+.container .video-list::-webkit-scrollbar-track{
+    background:rgb(241, 142, 43);
+    border-radius: 50px;
+}
+.container .video-list .vid:hover{
+    background: rgb(0, 0, 0);
+
+}
+.container .video-list .vid video {
+    width:100px;
+    border-radius: 5px;
+}
+.container .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-style: solid;
+}
+.container .video-list video{
+    width: 100%;
+    height: 105px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+}
+.container .video-list.vid:hover{
+    background: rgb(0, 0, 0);
+}
+.container .video-list .vid.active{
+    background: black;
+}
+.container .video-list .vid .title{
+    color: rgb(246, 142, 77);
+    font-size: 9px;
+}
+.container .video-list .vid .title .vid:hover{
+    color: rgb(255, 253, 253);
+    font-size: 9px;
+}
+@media(max-width: 991px){
+    .container{
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+}
+@media(max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+.banner-area{
+    background-image: url(images/UNGUARDED\ logo.png);
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    height:100vh;
+}
+.footer{ 
+    padding: 40px 0; 
+    background-color: white;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 20px;
+    color:rgb(246, 142, 77);
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid white;
+    width: 25px;
+    height: 40px;
+    line-height:38px;
+    display:inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 10px;
+    opacity: .75px;
+}
+.footer .social a:hover{
+    opacity: 0.5;
+    transition: 1.0s;
+}
+.footer ul {
+    margin-top: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 13px;
+    line-height:  1.6;
+    margin-bottom: 0;
+    text-align: center;
+    color:rgb(246, 142, 77);
+}
+.footer ul a{
+    color: inherit;
+    text-decoration: none;
+    opacity: .8px;
+}
+.footer ul li{
+    display: inline-block;
+    padding:0 10px;
+}
+.footer ul li:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(246, 142, 77);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.footer ul li:hover::after{
+    width: 100%;
+}
+.footer .copyright{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 13px;
+    color:rgb(246, 142, 77);
+}
+.register{
+    margin: auto;
+    background: #fff;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 4px;
+}
+.inputs{
+    width: 50%;
+    height: 28px;
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 4px;
+    border: 1px solid #999;
+    border-bottom: 3px solid rgb(246, 142, 77);
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(246, 142, 77);
+}
+.inputs:hover{
+    background: rgb(255, 205, 174);
+    transition: 1s;
+}
+.btn{ 
+    width: 105px;
+    height: 35px;
+    border: 20px;
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 30px;
+    background: rgb(246, 142, 77);
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-small;
+}
+.btn:hover{
+    width: 50%;
+    background: rgb(246, 142, 77);
+    transition: 1s;  
+}
